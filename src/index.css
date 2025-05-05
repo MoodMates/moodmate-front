@@ -1,0 +1,130 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.container-row {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.desktop-menu {
+  border: none;
+}
+
+.fixed {
+  position: fixed;
+}
+.z-20 {
+  z-index: 20;
+}
+.d-flex {
+  display: flex;
+}
+
+@media (min-width: 300px) {
+  .d-none-xs {
+    display: none;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .ant-drawer-content-wrapper {
+    width: 100% !important;
+  }
+}
+
+@media (min-width: 576px) {
+  .d-none-sm {
+    display: none;
+  }
+
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .d-none-md {
+    display: none;
+  }
+  .d-flex-md {
+    display: flex;
+  }
+  .hide-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .d-none-lg {
+    display: none;
+  }
+  .d-flex-lg {
+    display: flex;
+  }
+  .hide-mobile {
+    display: inherit;
+  }
+}
+
+@media (min-width: 1200px) {
+  .d-none-xl {
+    display: none;
+  }
+  .hide-mobile {
+    display: inherit;
+  }
+}
+
+@media (min-width: 1600px) {
+  .d-none-xxl {
+    display: none;
+  }
+  .hide-mobile {
+    display: inherit;
+  }
+}
+.space-between {
+  justify-content: space-between;
+}
+.align-items-center {
+  align-items: center;
+}
+.w-full {
+  width: 100%;
+}
+.mt-0 {
+  margin-top: 0 !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.ml-0 {
+  margin-left: 0 !important;
+}
+.mr-0 {
+  margin-right: 0 !important;
+}
+.m-0 {
+  margin: 0 !important;
+}
+.ant-tabs-top > .ant-tabs-nav {
+  margin: 0;
+}
