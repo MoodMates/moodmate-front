@@ -1,8 +1,8 @@
-import { Routes, Route, Navigate } from 'react-router-dom'
-import GeneralLayout from '../layout/GeneralLayout'
-import Home from '../pages/Home'
-import BikeDetails from '../pages/BikeDetails'
-import App from '../App'
+import { Routes, Route, Navigate } from "react-router-dom";
+import GeneralLayout from "../layout/GeneralLayout";
+import Home from "../pages/Home";
+import BikeDetails from "../pages/BikeDetails";
+import App from "../App";
 
 const AppRoutes = () => (
   <Routes>
@@ -14,6 +14,6 @@ const AppRoutes = () => (
     </Route>
     <Route path="*" element={<Navigate to="/" />} />
   </Routes>
-)
+);
 
-export default AppRoutes
+export default AppRoutes;
