@@ -41,7 +41,7 @@ export default function Menu() {
     {
       key: "profile",
       icon: <UserOutlined />,
-      label: "Mon Profil",
+      label: <Link href="/profil">Mon Profil</Link>,
     },
     {
       type: "divider",
@@ -113,7 +113,6 @@ export default function Menu() {
 
       <Space size="large">
         {isLoggedIn ? (
-          // Utilisateur connecté
           <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
             <span style={{ color: "white", fontSize: "14px" }}>
               Bonjour, {user?.prenom}
