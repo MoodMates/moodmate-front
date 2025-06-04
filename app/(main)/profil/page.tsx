@@ -30,7 +30,7 @@ import {
 } from "@ant-design/icons";
 import { useAuth } from "../../context/AuthContext";
 
-const { Title, Text, Paragraph } = Typography;
+const { Title, Text } = Typography;
 const { Option } = Select;
 
 interface UserStats {

@@ -34,8 +34,6 @@ export default function RegisterPage() {
       } else {
         message.error("Cet email est déjà utilisé");
       }
-    } catch (error) {
-      message.error("Erreur lors de l'inscription");
     } finally {
       setLoading(false);
     }
@@ -251,7 +249,7 @@ export default function RegisterPage() {
                   boxShadow: "0 4px 12px rgba(137, 92, 245, 0.3)",
                 }}
               >
-                S'inscrire
+                S&apos;inscrire
               </Button>
             </Form.Item>
 

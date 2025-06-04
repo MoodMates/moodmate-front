@@ -12,7 +12,6 @@ import {
   Modal,
   Spin,
   Badge,
-  Divider,
 } from "antd";
 import {
   SendOutlined,
@@ -56,7 +55,7 @@ export default function DiaryPage() {
     const savedEntries = localStorage.getItem("journalEntries");
     if (savedEntries) {
       const parsedEntries = JSON.parse(savedEntries);
-      const entriesWithDates = parsedEntries.map((entry: any) => ({
+      const entriesWithDates = parsedEntries.map((entry: JournalEntry) => ({
         ...entry,
         timestamp: new Date(entry.timestamp),
       }));
@@ -93,17 +92,6 @@ export default function DiaryPage() {
 
   const getEntriesForDate = (date: string) => {
     return entries.filter((entry) => entry.date === date);
-  };
-
-  const getEntriesByDate = () => {
-    const entriesByDate: { [key: string]: JournalEntry[] } = {};
-    entries.forEach((entry) => {
-      if (!entriesByDate[entry.date]) {
-        entriesByDate[entry.date] = [];
-      }
-      entriesByDate[entry.date].push(entry);
-    });
-    return entriesByDate;
   };
 
   const getDatesWithEntries = () => {

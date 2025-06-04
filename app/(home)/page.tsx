@@ -12,7 +12,7 @@ import Link from "next/link";
 import { Area } from "@ant-design/plots";
 import { useAuth } from "@/app/context/AuthContext";
 
-const { Title, Paragraph, Text } = Typography;
+const { Title, Paragraph } = Typography;
 
 export default function Home() {
   const { user, isLoggedIn } = useAuth();
@@ -228,7 +228,7 @@ export default function Home() {
                     lineHeight: 1,
                   }}
                 >
-                  "
+                  &ldquo;
                 </span>
                 <Paragraph
                   style={{
@@ -258,7 +258,7 @@ export default function Home() {
                     lineHeight: 1,
                   }}
                 >
-                  "
+                  &ldquo;
                 </span>
               </div>
             </div>

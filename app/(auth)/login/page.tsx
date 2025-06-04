@@ -26,8 +26,6 @@ export default function LoginPage() {
       } else {
         message.error("Email ou mot de passe incorrect");
       }
-    } catch (error) {
-      message.error("Erreur lors de la connexion");
     } finally {
       setLoading(false);
     }
@@ -149,7 +147,7 @@ export default function LoginPage() {
 
             <div style={{ textAlign: "center", marginTop: "20px" }}>
               <p style={{ color: "#666", fontSize: "1rem" }}>
-                Vous n'avez pas de compte ?{" "}
+                Vous n&apos;avez pas de compte ?{" "}
                 <Link
                   href="/register"
                   style={{
@@ -158,7 +156,7 @@ export default function LoginPage() {
                     textDecoration: "none",
                   }}
                 >
-                  S'inscrire
+                  S&apos;inscrire
                 </Link>
               </p>
             </div>
